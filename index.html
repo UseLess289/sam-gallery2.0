@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpeg">
+    <!-- Lib Masonry pour un bellll affichage des photos -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+
+
+<body>
+    <!-- Loader --> 
+    	<div class="loader-container" id="loader">
+		<div class="loader"></div>
+	</div>
+
+    <div id="title">
+        <a href="index.html"><h1>sam-gallery</h1></a>
+    </div>
+
+    <div id="subtitle">
+        <a href="TIPE/TIPEE2.html"><h2>Premières recherches sur le débruitage d'images par transformation en ondelettes</h2></a>
+        <a href="EPHEMERIDES/ephemeride.html"><h2>Calcul des ephémérides par interpolation des polynomes de Tchebychev</h2></a>
+    </div>
+    <div class="bandcamp">
+        <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=4212567170/size=small/bgcol=333333/linkcol=e32c14/transparent=true/" seamless>
+            <a href="https://io-records.bandcamp.com/album/sphere-vol-3-2">Sphere Vol. 3 de ıo</a>
+        </iframe>
+    </div>
+    
+    <div id="tag-filters" class="tag-filters"></div>
+    <div id="gallery" class="gallery">
+        <div class="gallery-sizer"></div>
+    </div>
+
+    <footer>
+        <div class="links">
+            <a id="instagram" class="links__icon" href="https://www.instagram.com/sam_ul_mc">
+                <span class="view-ig">insta</span>
+                <i class="fa fa-instagram fa-lg"></i>
+            </a>
+            <p class="date">github : UseLess289 - 13/11/2022</p>
+        </div>
+    </footer>
+
+
+    <!-- Modal pour l'image en grand -->
+    <div id="modal" class="modal" style="display:none;">
+      <div class="modal-bg"></div>
+      <img id="modal-img" class="modal-img" src="" alt="">
+    </div>
+
+    <!-- Loader -->
+    <script> 
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("loader").style.display = "none";
+        });
+    </script>
+    <!-- Charger et afficher les images-->
+    <script>
+fetch('photos.json')
+  .then(response => response.json())
+  .then(photos => {
+    // Récupère tous les tags uniques
+    const tags = Array.from(new Set(photos.map(photo => photo.tag))).sort();
+    const filters = document.getElementById('tag-filters');
+    const gallery = document.getElementById('gallery');
+    let activeTags = [];
+
+    // Génère les boutons de tags
+    tags.forEach(tag => {
+      const btn = document.createElement('button');
+      btn.className = 'tag-btn';
+      btn.textContent = tag;
+      btn.onclick = function() {
+        // Active/désactive le tag
+        if (activeTags.includes(tag)) {
+          activeTags = activeTags.filter(t => t !== tag);
+          btn.classList.remove('active');
+        } else {
+          activeTags.push(tag);
+          btn.classList.add('active');
+        }
+        displayPhotos();
+        
+      };
+      filters.appendChild(btn);
+      
+    });
+
+
+    function displayPhotos() {
+      gallery.innerHTML = '';
+      // ajoute le sizer pour masonry pour faire les colonnes
+      const sizer = document.createElement('div');
+      sizer.className = 'gallery-sizer';
+      gallery.appendChild(sizer);
+
+      // filtre les photos selon les tags du json
+      const filtered = activeTags.length === 0
+        ? photos
+        : photos.filter(photo => activeTags.includes(photo.tag));
+
+      filtered.forEach(photo => {
+        const img = document.createElement('img');
+        img.src = photo.filename;
+        img.alt = photo.tag;
+        img.className = 'gallery-img';
+        gallery.appendChild(img);
+      });
+
+      // reset masonry après affichage
+      imagesLoaded(gallery, function() {
+        new Masonry(gallery, {
+          itemSelector: '.gallery-img',
+          columnWidth: '.gallery-sizer',
+          percentPosition: true,
+          gutter: 16
+        });
+      });
+    }
+
+    displayPhotos();
+
+    // modal (plein écran)
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalBg = document.querySelector('.modal-bg');
+
+    gallery.addEventListener('click', function(e) {
+      if (e.target.classList.contains('gallery-img')) {
+        modalImg.src = e.target.src;
+        modal.style.display = 'flex';
+
+        //animation
+        void modal.offsetWidth;
+        modal.classList.add('show');
+      }
+    });
+
+    modalBg.addEventListener('click', function() {
+      modal.classList.remove('show');
+      setTimeout(() => {
+        modal.style.display = 'none';
+        modalImg.src = '';
+      }, 250); // durée de l'animation
+      
+  });
+});
+
+</script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+
+</body>
+</html>
