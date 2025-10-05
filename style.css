@@ -53,8 +53,9 @@ a:hover {
 .pdf-container iframe {
     width: 80%; 
     height: 600px;
-    border: 1px solid #ddd;
+    border: 1px solid #a00000;
     border-radius: 8px;
+    border-width: 4px;
 }
 
 .loader-container {
