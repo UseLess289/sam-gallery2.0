@@ -42,6 +42,20 @@ a:hover {
     transform: scale(1.02)
 }
 
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.pdf-container iframe {
+    width: 80%; 
+    height: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
 
 .loader-container {
     position: fixed;
@@ -72,28 +86,6 @@ a:hover {
     animation: spin 1s ease-in-out infinite;
 }
 
-/*
-.gallery {
-    
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    max-width: 100vw;
-    margin: 40px auto;
-    padding: 0 10px;
-}
-.gallery-img {
-    width: 100%;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    cursor: pointer;
-    transition: transform 0.2s;
-    display: block;
-}
-.gallery-img:hover {
-    transform: scale(1.03);
-}
-*/
 
 
 .tag-filters {
