@@ -10,7 +10,7 @@ for root, dirs, files in os.walk(img_dir):
     if tag == ".":
         tag = "misc"
     for f in files:
-        if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp')):
+        if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp', '.JPEG')):
             path = os.path.join(root, f).replace("\\", "/")
             output.append({
                 "filename": path,

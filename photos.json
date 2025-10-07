@@ -1,9 +1,5 @@
 [
     {
-        "filename": "img/preview/1-01.jpg",
-        "tag": "misc"
-    },
-    {
         "filename": "img/preview/1-19.jpg",
         "tag": "misc"
     },
@@ -16,35 +12,7 @@
         "tag": "misc"
     },
     {
-        "filename": "img/preview/1-44.jpg",
-        "tag": "misc"
-    },
-    {
         "filename": "img/preview/1-5.jpg",
-        "tag": "misc"
-    },
-    {
-        "filename": "img/preview/1-86.jpg",
-        "tag": "misc"
-    },
-    {
-        "filename": "img/preview/1-87.jpg",
-        "tag": "misc"
-    },
-    {
-        "filename": "img/preview/1-88.jpg",
-        "tag": "misc"
-    },
-    {
-        "filename": "img/preview/1-89.jpg",
-        "tag": "misc"
-    },
-    {
-        "filename": "img/preview/1-90.jpg",
-        "tag": "misc"
-    },
-    {
-        "filename": "img/preview/1-91.jpg",
         "tag": "misc"
     },
     {
@@ -244,6 +212,10 @@
         "tag": "Bordeaux"
     },
     {
+        "filename": "img/preview/Bordeaux/1-91.jpg",
+        "tag": "Bordeaux"
+    },
+    {
         "filename": "img/preview/Bordeaux/1-92.jpg",
         "tag": "Bordeaux"
     },
@@ -288,12 +260,48 @@
         "tag": "Bordeaux"
     },
     {
-        "filename": "img/preview/FOMA-sam-1 (35 of 73)_Original.JPEG",
-        "tag": "misc"
+        "filename": "img/preview/Chamonix/1-01.jpg",
+        "tag": "Chamonix"
     },
     {
-        "filename": "img/preview/FOMA-sam-1 (61 of 73)_Original.JPEG",
-        "tag": "misc"
+        "filename": "img/preview/Chamonix/1-44.jpg",
+        "tag": "Chamonix"
+    },
+    {
+        "filename": "img/preview/Chamonix/1-86.jpg",
+        "tag": "Chamonix"
+    },
+    {
+        "filename": "img/preview/Chamonix/1-87.jpg",
+        "tag": "Chamonix"
+    },
+    {
+        "filename": "img/preview/Chamonix/1-88.jpg",
+        "tag": "Chamonix"
+    },
+    {
+        "filename": "img/preview/Chamonix/1-89.jpg",
+        "tag": "Chamonix"
+    },
+    {
+        "filename": "img/preview/Chamonix/1-90.jpg",
+        "tag": "Chamonix"
+    },
+    {
+        "filename": "img/preview/Chamonix/_MG_8148.jpg",
+        "tag": "Chamonix"
+    },
+    {
+        "filename": "img/preview/Chamonix/_MG_8150.jpg",
+        "tag": "Chamonix"
+    },
+    {
+        "filename": "img/preview/Chamonix/img (14 sur 24).JPEG",
+        "tag": "Chamonix"
+    },
+    {
+        "filename": "img/preview/Chamonix/img (16 sur 24).JPEG",
+        "tag": "Chamonix"
     },
     {
         "filename": "img/preview/Hamburg/1-11.jpg",
@@ -340,10 +348,6 @@
         "tag": "Hamburg"
     },
     {
-        "filename": "img/preview/IMG_0008_Original.JPEG",
-        "tag": "misc"
-    },
-    {
         "filename": "img/preview/Paris/1-02.jpg",
         "tag": "Paris"
     },
@@ -381,6 +385,10 @@
     },
     {
         "filename": "img/preview/Paris/1-9.jpg",
+        "tag": "Paris"
+    },
+    {
+        "filename": "img/preview/Paris/IMG_0008_Original.JPEG",
         "tag": "Paris"
     },
     {
@@ -436,20 +444,12 @@
         "tag": "Pologne"
     },
     {
-        "filename": "img/preview/_MG_8148.jpg",
-        "tag": "misc"
+        "filename": "img/preview/Pologne/FOMA-sam-1 (35 of 73)_Original.JPEG",
+        "tag": "Pologne"
     },
     {
-        "filename": "img/preview/_MG_8150.jpg",
-        "tag": "misc"
-    },
-    {
-        "filename": "img/preview/img (14 sur 24).JPEG",
-        "tag": "misc"
-    },
-    {
-        "filename": "img/preview/img (16 sur 24).JPEG",
-        "tag": "misc"
+        "filename": "img/preview/Pologne/FOMA-sam-1 (61 of 73)_Original.JPEG",
+        "tag": "Pologne"
     },
     {
         "filename": "img/preview/sarah portrait (1 of 5).jpg",
