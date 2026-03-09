@@ -51,7 +51,7 @@
     </footer>
 
 
-    <!-- Modal pour l'image en grand -->
+    <!-- Modal for big image -->
     <div id="modal" class="modal" style="display:none;">
       <div class="modal-bg"></div>
       <img id="modal-img" class="modal-img" src="" alt="">
@@ -63,24 +63,23 @@
             document.getElementById("loader").style.display = "none";
         });
     </script>
-    <!-- Charger et afficher les images-->
+    <!-- charge then display images-->
     <script>
 fetch('photos.json')
   .then(response => response.json())
   .then(photos => {
-    // Récupère tous les tags uniques
     const tags = Array.from(new Set(photos.map(photo => photo.tag))).sort();
+    const tagOrder = ["Astrophotographie", "Bordeaux", "Paris", "Berlin", "Chamonix", "Hamburg", "Blois", "Pologne", "misc"];
     const filters = document.getElementById('tag-filters');
     const gallery = document.getElementById('gallery');
     let activeTags = [];
 
-    // Génère les boutons de tags
+    // buttons
     tags.forEach(tag => {
       const btn = document.createElement('button');
       btn.className = 'tag-btn';
       btn.textContent = tag;
       btn.onclick = function() {
-        // Active/désactive le tag
         if (activeTags.includes(tag)) {
           activeTags = activeTags.filter(t => t !== tag);
           btn.classList.remove('active');
@@ -98,15 +97,23 @@ fetch('photos.json')
 
     function displayPhotos() {
       gallery.innerHTML = '';
-      // ajoute le sizer pour masonry pour faire les colonnes
       const sizer = document.createElement('div');
       sizer.className = 'gallery-sizer';
       gallery.appendChild(sizer);
 
-      // filtre les photos selon les tags du json
       const filtered = activeTags.length === 0
         ? photos
         : photos.filter(photo => activeTags.includes(photo.tag));
+
+      // sort photos by tag order
+      filtered.sort((a, b) => {
+        const indexA = tagOrder.indexOf(a.tag);
+        const indexB = tagOrder.indexOf(b.tag);
+        if (indexA === -1 && indexB === -1) return 0;
+        if (indexA === -1) return 1;
+        if (indexB === -1) return -1;
+        return indexA - indexB;
+      });
 
       filtered.forEach(photo => {
         const img = document.createElement('img');
@@ -129,7 +136,7 @@ fetch('photos.json')
 
     displayPhotos();
 
-    // modal (plein écran)
+    // modal fullscreen
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modal-img');
     const modalBg = document.querySelector('.modal-bg');
@@ -150,7 +157,7 @@ fetch('photos.json')
       setTimeout(() => {
         modal.style.display = 'none';
         modalImg.src = '';
-      }, 250); // durée de l'animation
+      }, 250);
       
   });
 });
