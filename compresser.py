@@ -17,4 +17,3 @@ for root, dirs, files in os.walk(img_dir):
                     ratio = MAX_WIDTH / img.width
                     new_size = (MAX_WIDTH, int(img.height * ratio))
                     img = img.resize(new_size, Image.LANCZOS)
-                img.save(path, optimize=True, quality=85)
