@@ -163,6 +163,23 @@ fetch('photos.json')
   });
 });
 
+const bioCard = document.getElementById('bio-card');
+const bioModal = document.getElementById('bio-modal');
+const bioModalBg = document.querySelector('.bio-modal-bg');
+
+bioCard.addEventListener('click', () => {
+    bioModal.style.display = 'flex';
+    void bioModal.offsetWidth; // force reflow pour l'animation
+    bioModal.classList.add('show');
+});
+
+bioModalBg.addEventListener('click', () => {
+    bioModal.classList.remove('show');
+    setTimeout(() => {
+        bioModal.style.display = 'none';
+    }, 250);
+});
+
 </script>
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
