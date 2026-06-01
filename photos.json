@@ -20,7 +20,7 @@
         "tag": "misc"
     },
     {
-        "filename": "img/preview/Astrophotographie/1-100.JPG",
+        "filename": "img/preview/Astrophotographie/1-100.jpg",
         "tag": "Astrophotographie"
     },
     {
@@ -52,7 +52,7 @@
         "tag": "Astrophotographie"
     },
     {
-        "filename": "img/preview/Astrophotographie/NGC 01 6888 sam.JPEG",
+        "filename": "img/preview/Astrophotographie/NGC 01 6888 sam.jpeg",
         "tag": "Astrophotographie"
     },
     {
@@ -60,11 +60,11 @@
         "tag": "Astrophotographie"
     },
     {
-        "filename": "img/preview/Astrophotographie/m45finale.JPG",
+        "filename": "img/preview/Astrophotographie/m45finale.jpg",
         "tag": "Astrophotographie"
     },
     {
-        "filename": "img/preview/Astrophotographie/r\u00e9sultat1M42.JPEG",
+        "filename": "img/preview/Astrophotographie/r\u00e9sultat1M42.jpeg",
         "tag": "Astrophotographie"
     },
     {
@@ -120,10 +120,6 @@
         "tag": "Berlin"
     },
     {
-        "filename": "img/preview/Berlin/_MG_7084_Original.JPEG",
-        "tag": "Berlin"
-    },
-    {
         "filename": "img/preview/Blois/1-16.jpg",
         "tag": "Blois"
     },
@@ -152,7 +148,7 @@
         "tag": "Blois"
     },
     {
-        "filename": "img/preview/Blois/IMG_0017_Original.JPEG",
+        "filename": "img/preview/Blois/IMG_0017_Original.jpeg",
         "tag": "Blois"
     },
     {
@@ -161,10 +157,6 @@
     },
     {
         "filename": "img/preview/Blois/_MG_4810.jpg",
-        "tag": "Blois"
-    },
-    {
-        "filename": "img/preview/Blois/_MG_4934.jpg",
         "tag": "Blois"
     },
     {
@@ -180,11 +172,15 @@
         "tag": "Blois"
     },
     {
-        "filename": "img/preview/Blois/_MG_6188-26_Original.JPEG",
+        "filename": "img/preview/Blois/_MG_6188-26_Original.jpeg",
         "tag": "Blois"
     },
     {
         "filename": "img/preview/Blois/_MG_6257-42.jpg",
+        "tag": "Blois"
+    },
+    {
+        "filename": "img/preview/Blois/sarah portrait (1 of 5).jpg",
         "tag": "Blois"
     },
     {
@@ -244,19 +240,19 @@
         "tag": "Bordeaux"
     },
     {
-        "filename": "img/preview/Bordeaux/IMG_9875.JPG",
+        "filename": "img/preview/Bordeaux/IMG_9875.jpg",
         "tag": "Bordeaux"
     },
     {
-        "filename": "img/preview/Bordeaux/IMG_9915.JPG",
+        "filename": "img/preview/Bordeaux/IMG_9915.jpg",
         "tag": "Bordeaux"
     },
     {
-        "filename": "img/preview/Bordeaux/IMG_9924.JPG",
+        "filename": "img/preview/Bordeaux/IMG_9924.jpg",
         "tag": "Bordeaux"
     },
     {
-        "filename": "img/preview/Bordeaux/_MG_8048.JPEG",
+        "filename": "img/preview/Bordeaux/_MG_8048.jpg",
         "tag": "Bordeaux"
     },
     {
@@ -264,11 +260,11 @@
         "tag": "Bordeaux"
     },
     {
-        "filename": "img/preview/Bordeaux/_MG_8621,CR2_edited.JPEG",
+        "filename": "img/preview/Bordeaux/_MG_8621,CR2_edited.jpeg",
         "tag": "Bordeaux"
     },
     {
-        "filename": "img/preview/Bordeaux/_MG_8710,CR2_edited.JPEG",
+        "filename": "img/preview/Bordeaux/_MG_8710,CR2_edited.jpeg",
         "tag": "Bordeaux"
     },
     {
@@ -308,11 +304,11 @@
         "tag": "Chamonix"
     },
     {
-        "filename": "img/preview/Chamonix/img (14 sur 24).JPEG",
+        "filename": "img/preview/Chamonix/img (14 sur 24).jpeg",
         "tag": "Chamonix"
     },
     {
-        "filename": "img/preview/Chamonix/img (16 sur 24).JPEG",
+        "filename": "img/preview/Chamonix/img (16 sur 24).jpeg",
         "tag": "Chamonix"
     },
     {
@@ -352,11 +348,11 @@
         "tag": "Hamburg"
     },
     {
-        "filename": "img/preview/Hamburg/_MG_6870_Original.JPEG",
+        "filename": "img/preview/Hamburg/_MG_6870_Original.jpeg",
         "tag": "Hamburg"
     },
     {
-        "filename": "img/preview/Hamburg/_MG_7215_Original.JPEG",
+        "filename": "img/preview/Hamburg/_MG_7215_Original.jpeg",
         "tag": "Hamburg"
     },
     {
@@ -400,19 +396,19 @@
         "tag": "Paris"
     },
     {
-        "filename": "img/preview/Paris/IMG_0008_Original.JPEG",
+        "filename": "img/preview/Paris/IMG_0008_Original.jpeg",
         "tag": "Paris"
     },
     {
-        "filename": "img/preview/Paris/_MG_6357-2_Original.JPEG",
+        "filename": "img/preview/Paris/_MG_6357-2_Original.jpeg",
         "tag": "Paris"
     },
     {
-        "filename": "img/preview/Paris/_MG_6395-8_Original.JPEG",
+        "filename": "img/preview/Paris/_MG_6395-8_Original.jpeg",
         "tag": "Paris"
     },
     {
-        "filename": "img/preview/Paris/_MG_6412-12_Original.JPEG",
+        "filename": "img/preview/Paris/_MG_6412-12_Original.jpeg",
         "tag": "Paris"
     },
     {
@@ -456,15 +452,11 @@
         "tag": "Pologne"
     },
     {
-        "filename": "img/preview/Pologne/FOMA-sam-1 (35 of 73)_Original.JPEG",
+        "filename": "img/preview/Pologne/FOMA-sam-1 (35 of 73)_Original.jpeg",
         "tag": "Pologne"
     },
     {
-        "filename": "img/preview/Pologne/FOMA-sam-1 (61 of 73)_Original.JPEG",
+        "filename": "img/preview/Pologne/FOMA-sam-1 (61 of 73)_Original.jpeg",
         "tag": "Pologne"
-    },
-    {
-        "filename": "img/preview/sarah portrait (1 of 5).jpg",
-        "tag": "misc"
     }
 ]
