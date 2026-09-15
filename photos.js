@@ -152,31 +152,31 @@ window.photos = [
         "tag": "Blois"
     },
     {
-        "filename": "img/preview/Blois/_MG_4801.jpg",
+        "filename": "img/preview/Blois/MG_4801.jpg",
         "tag": "Blois"
     },
     {
-        "filename": "img/preview/Blois/_MG_4810.jpg",
+        "filename": "img/preview/Blois/MG_4810.jpg",
         "tag": "Blois"
     },
     {
-        "filename": "img/preview/Blois/_MG_5106.jpg",
+        "filename": "img/preview/Blois/MG_5106.jpg",
         "tag": "Blois"
     },
     {
-        "filename": "img/preview/Blois/_MG_5857-5.jpg",
+        "filename": "img/preview/Blois/MG_5857-5.jpg",
         "tag": "Blois"
     },
     {
-        "filename": "img/preview/Blois/_MG_5999-10.jpg",
+        "filename": "img/preview/Blois/MG_5999-10.jpg",
         "tag": "Blois"
     },
     {
-        "filename": "img/preview/Blois/_MG_6188-26_Original.jpeg",
+        "filename": "img/preview/Blois/MG_6188-26_Original.jpeg",
         "tag": "Blois"
     },
     {
-        "filename": "img/preview/Blois/_MG_6257-42.jpg",
+        "filename": "img/preview/Blois/MG_6257-42.jpg",
         "tag": "Blois"
     },
     {
@@ -252,19 +252,19 @@ window.photos = [
         "tag": "Bordeaux"
     },
     {
-        "filename": "img/preview/Bordeaux/_MG_8048.jpg",
+        "filename": "img/preview/Bordeaux/MG_8048.jpg",
         "tag": "Bordeaux"
     },
     {
-        "filename": "img/preview/Bordeaux/_MG_8137.jpg",
+        "filename": "img/preview/Bordeaux/MG_8137.jpg",
         "tag": "Bordeaux"
     },
     {
-        "filename": "img/preview/Bordeaux/_MG_8621,CR2_edited.jpeg",
+        "filename": "img/preview/Bordeaux/MG_8621,CR2_edited.jpeg",
         "tag": "Bordeaux"
     },
     {
-        "filename": "img/preview/Bordeaux/_MG_8710,CR2_edited.jpeg",
+        "filename": "img/preview/Bordeaux/MG_8710,CR2_edited.jpeg",
         "tag": "Bordeaux"
     },
     {
@@ -296,11 +296,11 @@ window.photos = [
         "tag": "Chamonix"
     },
     {
-        "filename": "img/preview/Chamonix/_MG_8148.jpg",
+        "filename": "img/preview/Chamonix/MG_8148.jpg",
         "tag": "Chamonix"
     },
     {
-        "filename": "img/preview/Chamonix/_MG_8150.jpg",
+        "filename": "img/preview/Chamonix/MG_8150.jpg",
         "tag": "Chamonix"
     },
     {
@@ -348,11 +348,11 @@ window.photos = [
         "tag": "Hamburg"
     },
     {
-        "filename": "img/preview/Hamburg/_MG_6870_Original.jpeg",
+        "filename": "img/preview/Hamburg/MG_6870_Original.jpeg",
         "tag": "Hamburg"
     },
     {
-        "filename": "img/preview/Hamburg/_MG_7215_Original.jpeg",
+        "filename": "img/preview/Hamburg/MG_7215_Original.jpeg",
         "tag": "Hamburg"
     },
     {
@@ -396,19 +396,19 @@ window.photos = [
         "tag": "Paris"
     },
     {
-        "filename": "img/preview/Paris/_MG_6357-2_Original.jpeg",
+        "filename": "img/preview/Paris/MG_6357-2_Original.jpeg",
         "tag": "Paris"
     },
     {
-        "filename": "img/preview/Paris/_MG_6395-8_Original.jpeg",
+        "filename": "img/preview/Paris/MG_6395-8_Original.jpeg",
         "tag": "Paris"
     },
     {
-        "filename": "img/preview/Paris/_MG_6412-12_Original.jpeg",
+        "filename": "img/preview/Paris/MG_6412-12_Original.jpeg",
         "tag": "Paris"
     },
     {
-        "filename": "img/preview/Paris/_MG_6704.jpg",
+        "filename": "img/preview/Paris/MG_6704.jpg",
         "tag": "Paris"
     },
     {
