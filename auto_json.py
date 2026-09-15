@@ -23,3 +23,8 @@ output.sort(key=lambda x: x["filename"])
 with open("photos.json", "w") as json_file:
     json.dump(output, json_file, indent=4)
 
+with open("photos.js", "w") as js_file:
+    js_file.write("window.photos = ")
+    json.dump(output, js_file, indent=4)
+    js_file.write(";")
+

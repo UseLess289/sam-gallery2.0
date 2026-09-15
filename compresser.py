@@ -17,3 +17,10 @@ for root, dirs, files in os.walk(img_dir):
                     ratio = MAX_WIDTH / img.width
                     new_size = (MAX_WIDTH, int(img.height * ratio))
                     img = img.resize(new_size, Image.LANCZOS)
+                if f.lower().endswith('.png'):
+                    img.save(path, optimize=True)
+                else:
+                    if img.mode != "RGB":
+                        img = img.convert("RGB")
+                    img.save(path, optimize=True, quality=85)
+                print(f"  -> {os.path.getsize(path) // 1024} Ko")

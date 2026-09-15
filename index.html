@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam Gallery</title>
+    <meta name="description" content="Galerie photo de Sam — astrophotographie, voyages et projets académiques (SVD, CORDIC, ondelettes, éphémérides).">
+    <meta property="og:title" content="Sam Gallery">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/preview/1-19.jpg">
+    <meta property="og:description" content="Galerie photo de Sam — astrophotographie, voyages et projets académiques (SVD, CORDIC, ondelettes, éphémérides).">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpeg">
     <!-- Lib Masonry pour un bellll affichage des photos -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="photos.js"></script>
 </head>
 
 
@@ -24,7 +31,7 @@
 
     <div id="subtitle">
         <a href="SVD/svd.html"><h2>Compression d'images par factorisation SVD</h2></a>
-        <a href="IIR&RIR/IIR.html"><h2>FIR filters</h2></a>
+        <a href="IIR-RIR/IIR.html"><h2>FIR filters</h2></a>
         <a href="CORDIC/cordic.html"><h2>Algorithme de CORDIC</h2></a>
         <a href="TIPE/TIPEE2.html"><h2>Premières recherches sur le débruitage d'images par transformation en ondelettes</h2></a>
         <a href="TIPE/pdf.html"><h2>Présentation finale du débruitage par ondelettes</h2></a>
@@ -58,17 +65,13 @@
       <img id="modal-img" class="modal-img" src="" alt="">
     </div>
 
-    <!-- Loader -->
-    <script> 
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("loader").style.display = "none";
-        });
-    </script>
     <!-- charge then display images-->
     <script>
-fetch('photos.json')
-  .then(response => response.json())
-  .then(photos => {
+const photos = window.photos;
+if (!Array.isArray(photos)) {
+  console.error('photos.js invalide — relancez auto_json.py');
+  document.getElementById('loader').style.display = 'none';
+} else {
     const tags = Array.from(new Set(photos.map(photo => photo.tag))).sort();
     const tagOrder = ["Astrophotographie", "Bordeaux", "Paris", "Berlin", "Chamonix", "Hamburg", "Blois", "Pologne", "misc"];
     const filters = document.getElementById('tag-filters');
@@ -132,6 +135,14 @@ fetch('photos.json')
           percentPosition: true,
           gutter: 16
         });
+        // hide loader only once images are actually loaded
+        const loader = document.getElementById('loader');
+        if (loader) {
+          loader.style.opacity = '0';
+          setTimeout(() => {
+            loader.style.display = 'none';
+          }, 500);
+        }
       });
     }
 
@@ -161,28 +172,8 @@ fetch('photos.json')
       }, 250);
       
   });
-});
-
-const bioCard = document.getElementById('bio-card');
-const bioModal = document.getElementById('bio-modal');
-const bioModalBg = document.querySelector('.bio-modal-bg');
-
-bioCard.addEventListener('click', () => {
-    bioModal.style.display = 'flex';
-    void bioModal.offsetWidth; // force reflow pour l'animation
-    bioModal.classList.add('show');
-});
-
-bioModalBg.addEventListener('click', () => {
-    bioModal.classList.remove('show');
-    setTimeout(() => {
-        bioModal.style.display = 'none';
-    }, 250);
-});
-
+}
 </script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-
 
 </body>
 </html>

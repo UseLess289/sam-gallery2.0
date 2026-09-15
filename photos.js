@@ -1,4 +1,4 @@
-[
+window.photos = [
     {
         "filename": "img/preview/1-19.jpg",
         "tag": "misc"
@@ -455,4 +455,4 @@
         "filename": "img/preview/Pologne/FOMA-sam-1 (61 of 73)_Original.jpeg",
         "tag": "Pologne"
     }
-]
+];

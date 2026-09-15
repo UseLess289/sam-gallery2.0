@@ -59,6 +59,24 @@ a:hover {
     color: #730101 !important;
 }
 
+/* Lien de retour vers la galerie */
+.back-nav {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 1000;
+    color: #ffffff !important;
+    background: none !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.back-nav:hover {
+    text-decoration: underline;
+    color: #ffffff !important;
+}
+
 pre { 
     line-height: 125%;
     background-color: #1a1a1a !important;
@@ -96,6 +114,13 @@ pre {
     color: #e0e0e0 !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5) !important;
     border: 1px solid #333 !important;
+}
+
+/* Ne jamais déborder du viewport : bloc code/sortie scrollent en interne */
+pre, .jp-InputArea-editor, .jp-OutputArea-output,
+.jp-InputArea, .jp-OutputArea {
+    max-width: 100% !important;
+    overflow-x: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -174,4 +199,15 @@ ul, ol {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--dark-highlight);
+}
+
+/* Ajustements pour petits écrans */
+@media (max-width: 600px) {
+    html, body {
+        padding: 10px;
+    }
+    pre, .jp-InputArea-editor, .jp-OutputArea-output {
+        padding: 1em !important;
+        font-size: 12.5px !important;
+    }
 } 
